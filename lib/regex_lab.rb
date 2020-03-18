@@ -25,8 +25,8 @@ def first_word_capitalized_and_ends_with_punctuation?(text)
 end
 
 def valid_phone_number?(phone)
-  binding.pry
   if phone.scan(/\b\d{10}\b/)
+    binding.pry
     return true
   end
 end
